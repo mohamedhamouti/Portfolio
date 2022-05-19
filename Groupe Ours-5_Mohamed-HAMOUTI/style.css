@@ -1,0 +1,1020 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap%27');
+html
+{
+  scroll-behavior: smooth;
+}
+
+body
+{
+  font-family: 'Advent Pro', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul
+{
+  margin: 0;
+  padding: 0;
+}
+
+li
+{
+  list-style-type: none;
+}
+
+h2
+{
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 2em;
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+/* ******************* NAVBAR ******************* */
+nav
+{
+  overflow: hidden;
+  background-color: grey;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+header li
+{
+  float: right;
+  font-size: 1.2em;
+}
+
+header li a
+{
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+}
+
+header li a:hover
+{
+  color: white;
+  transition:0,3s;
+}
+
+#logo
+{
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  float: left;
+}
+
+/* **************** IMAGE PRINCIPALE ************* */
+#imagePrincipale
+{
+  padding-top: 60px;
+  background: url(media/escape-game.JPG) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 799px;
+}
+
+#img_Fond
+{
+  padding-top: 60px;
+  background: url(media/Img_Fond.JPEG) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 799px;
+}
+
+#character
+{
+  padding-top: 60px;
+  background: url(media/characters.png) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 799px;
+}
+
+#img_escape 
+{
+  padding-top: 60px;
+  background: url(media/fond-esc.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+  height: 799px;
+  z-index: 0;
+}
+h1
+{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6em;
+  margin-top: 100px;
+  text-shadow: 1px 3px 2px black;
+}
+
+#premierTrait
+{
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #FFFAE1;
+  box-shadow: 1px 3px 2px black;
+}
+
+h3
+{
+  text-align: center;
+  color:antiquewhite;
+  font-size: 3em;
+  text-shadow: 1px 3px 2px black;
+}
+
+/* *************** PRESENTATION ********************** */
+#presentation
+{
+  background-color: #FFFAE1;
+  padding: 10px 0px 100px 0;
+}
+
+#presentation_esc1
+{
+  background-color: #CBCBCB;
+  padding: 10px 0px 100px 0;
+}
+
+#presentation_esc2
+{
+  background-color: #631120;
+  padding: 10px 0px 100px 0;
+}
+
+#presentation_esc3
+{
+  background-color: #e7f4df;
+  padding: 10px 0px 100px 0;
+}
+
+#texteIntro
+{
+  padding: 0px 20%;
+  text-align: center;
+  font-size: 20px;
+}
+
+#escdisp
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+.imagesesc h4
+{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 1.8em;
+  margin: 15px;
+  font-weight: 300;
+}
+
+.imagesesc img
+{
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px 1px rgba(0,0,0,0.7);
+}
+
+.imagesesc img:hover
+{
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+}
+
+
+/*************************ESCAPES**************************/
+/***Fonds et couleurs de titres***/
+h1#escape_title1
+{
+  color: #FCC201;
+}
+
+h1#escape_title2
+{
+  color:red;
+}
+
+h1#escape_title3
+{
+  color:#4F69C6;
+}
+
+/***Taille du texte***/
+#presentation_esc1
+{
+  font-size:1.1em;
+}
+
+#presentation_esc2
+{
+  font-size:1.1em;
+}
+
+#presentation_esc3
+{
+  font-size:1.1em;
+}
+
+/***Alignements globaux pour tous les commentaires***/
+.rating
+{
+  font-family:'Balsamiq Sans';
+}
+
+.commentaire_jeu
+{
+  position: absolute;
+  bottom: 0px;
+  height:10%;
+  width: 50%;
+  text-align:center;
+  left:25%;
+  color:white;
+}
+
+.commentaire_jeu p
+{
+  padding:0;
+  margin-top:-10px;
+}
+
+.description_jeu h2
+{
+  padding-top:0px;
+}
+
+/***Jeu Harry Potter***/
+.harrypotter
+{
+  position: relative;
+  width:960px;
+  margin-left:25%;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: linear-gradient(0deg, rgba(137,0,0,1) 0%, rgba(251,126,0,1) 70%, rgba(255,167,0,1) 100%);
+}
+
+.harrypotter .image_jeu
+{
+  position:absolute;
+  right:-25%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.harrypotter .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.harrypotter .image_jeu img
+{
+  width:476px;
+  height:355px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.harrypotter .description_jeu
+{
+  position:absolute;
+  left:0px;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+/***Jeu Tesla***/
+.tesla
+{
+  position: relative;
+  width:960px;
+  margin-left:25%;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: linear-gradient(0deg, rgba(2,0,36,1) 11%, rgba(46,46,191,1) 36%, rgba(0,212,255,1) 100%);
+}
+
+.tesla .image_jeu
+{
+  position:absolute;
+  left:-25%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.tesla .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.tesla .image_jeu img
+{
+  width:476px;
+  height:355px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.tesla .description_jeu
+{
+  position:absolute;
+  right:0px;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+.tesla #vs
+{
+  position:absolute;
+  width:200px;
+  height:200px;
+  border:1px solid black;
+  right:-202px;
+  top:6em;
+  text-align:center;
+  background-color:red;
+  border-radius:30px;
+}
+
+.tesla #vs p
+{
+  font-family:'Balsamiq Sans';
+}
+
+.tesla #vs img
+{
+  position:absolute;
+  width:150px;
+  height:150px;
+  bottom:0px;
+  left:25px;
+}
+
+.tesla #vs:hover
+{
+  transform: scale(1.13);
+  transition: 0.3s ease-in-out;
+}
+
+/***Jeu Sherlock Holmes***/
+.sherlock
+{
+  position: relative;
+  width:960px;
+  margin-left:25%;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: linear-gradient(0deg, rgba(56,56,56,1) 0%, rgba(45,88,103,1) 25%, rgba(30,46,77,1) 50%, rgba(44,0,58,1) 100%);
+}
+
+.sherlock .image_jeu
+{
+  position:absolute;
+  right:-25%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.sherlock .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.sherlock .image_jeu img
+{
+  width:476px;
+  height:355px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.sherlock .description_jeu
+{
+  position:absolute;
+  left:0px;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+.sherlock #vs
+{
+  position:absolute;
+  width:200px;
+  height:200px;
+  border:1px solid black;
+  left:-202px;
+  top:6em;
+  text-align:center;
+  background-color:red;
+  border-radius:30px;
+}
+
+.sherlock #vs p
+{
+  font-family:'Balsamiq Sans';
+}
+
+.sherlock #vs img
+{
+  position:absolute;
+  width:150px;
+  height:150px;
+  bottom:0px;
+  left:25px;
+}
+
+.sherlock #vs:hover
+{
+  transform: scale(1.13);
+  transition: 0.3s ease-in-out;
+}
+
+/***Jeu Attaque Zombie***/
+.zombie
+{
+  position: relative;
+  width:960px;
+  margin-left:25%;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: linear-gradient(0deg, rgba(32,94,9,1) 0%, rgba(58,166,18,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+.zombie .image_jeu
+{
+  position:absolute;
+  left:-25%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.zombie .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.zombie .image_jeu img
+{
+  width:476px;
+  height:355px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.zombie .description_jeu
+{
+  position:absolute;
+  right:0px;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+/***Jeu La Casa de Papel***/
+.papel
+{
+  position: relative;
+  width:960px;
+  margin-left:25%;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.papel .image_jeu
+{
+  position:absolute;
+  right:-25%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.papel .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.papel .image_jeu img
+{
+  width:476px;
+  height:355px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.papel .description_jeu
+{
+  position:absolute;
+  left:0px;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+/***Jeu Assassin's Creed***/
+.AC
+{
+  position: relative;
+  width:960px;
+  margin-left:25%;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: radial-gradient(circle, rgba(196,85,85,1) 0%, rgba(255,225,0,1) 100%);
+}
+
+.AC .image_jeu
+{
+  position:absolute;
+  left:-25%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.AC .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.AC .image_jeu img
+{
+  width:476px;
+  height:355px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.AC .description_jeu
+{
+  position:absolute;
+  right:0px;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+/**************************** Résérvation *****************************/
+#Content
+{
+  display: inline-flex;
+  border:solid brown 1px;
+  margin-left: 33%;
+  margin-right: 15%;
+}
+
+#TarCr
+{
+  padding: 10px;
+  text-align: center;
+}
+
+#TarPl
+{
+  padding: 10px;
+  padding-left: 200px;
+  text-align: center;
+}
+
+form input[type = submit]
+{
+  color: #fff;
+  background: #f2745f;
+  padding: 12px ;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form input[type = submit]:hover
+{
+  opacity: 0.9;
+}
+
+/************************FAQ**************************/
+#faq{
+    color:#964B00;
+}
+
+#regles{
+  text-align: center;
+  font-size: 1,5em;
+}
+
+.clear{
+    font-family:'Balsamiq Sans';
+    font-size:140%;
+}
+
+#mail{
+    text-decoration:underline;
+    font-weight: bold;
+    color:blue;
+}
+
+/*******************Mods*****************************/
+.versus
+{
+  padding-top: 50px;
+  position: relative;
+  width:960px;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.versus .image_jeu
+{
+  position:absolute;
+  right:-50%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.versus .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.versus .image_jeu img
+{
+  width:476px;
+  height:476px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.versus .description_jeu
+{
+  position:absolute;
+  left:10%;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+.Annive
+{
+  margin-top: 50px;
+  padding-top: 50px;
+  position: relative;
+  width:960px;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.Annive .image_jeu
+{
+  position:absolute;
+  right:-50%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.Annive .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.Annive .image_jeu img
+{
+  width:476px;
+  height:476px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.Annive .description_jeu
+{
+  position:absolute;
+  left:10%;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+.Team-Building
+{
+  margin-top: 50px;
+  padding-top: 50px;
+  position: relative;
+  width:960px;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.Team-Building .image_jeu
+{
+  position:absolute;
+  right:-50%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.Team-Building .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.Team-Building .image_jeu img
+{
+  width:476px;
+  height:476px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.Team-Building .description_jeu
+{
+  position:absolute;
+  left:10%;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+
+.Party
+{
+  margin-top: 50px;
+  padding-top: 50px;
+  position: relative;
+  width:960px;
+  margin-right:25%;
+  height:25em;
+  border:1px solid black;
+  background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+.Party .image_jeu
+{
+  position:absolute;
+  right:-50%;
+  height: auto;
+  width:auto;
+  top:-1px;
+}
+
+.Party .image_jeu img:hover
+{
+  transform: scale(1.13);
+  transition: 0.6s ease-in-out;
+  box-shadow:0px 0px 0px;
+}
+
+.Party .image_jeu img
+{
+  width:476px;
+  height:476px;
+  border:1px solid black;
+  box-shadow:5px 5px 5px black;
+}
+
+.Party .description_jeu
+{
+  position:absolute;
+  left:10%;
+  height: 90%;
+  width:670px;
+  text-align:center;
+  margin-left:20px;
+  margin-right:25px;
+  color:white;
+}
+
+
+/***************** Découvertes ***********************/
+#Scp
+{
+  height: 1400px;
+  background-color: #f1f2f6;
+  padding: 1px 2%;
+}
+
+#Scp h2
+{
+  padding-top: 60px;
+}
+
+#Vs
+{
+  background: url(media/Vs.jpg);
+}
+
+#Anniversaire
+{
+  background: url(media/Anniversaire.JPG);
+}
+
+#Soirée
+{
+  background: url(media/Soirée.JPG);
+}
+
+#Team
+{
+  background: url(media/Team.jpg);
+}
+
+#Scp li
+{
+  margin: 65px 100px 0 100px;
+  height: 226px;
+  width: 55%;
+  max-width: 550px;
+  float: left;
+  box-shadow: 6px 6px 28px -1px rgba(0,0,0,0.75);
+}
+
+#Scp p
+{
+  height: 45px;
+  width: 235px;
+  background-color: #01DF74;
+  float:right;
+  margin: 50px -180px 0 0;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 4px 4px 0 1px rgba(90,161,43,1);
+}
+
+#Scp #Anniversaire, #Scp #Team
+{
+  float: right;
+}
+
+#Anniversaire p, #Team p
+{
+  float: left;
+  background-color: cyan;
+  margin-left: -180px;
+  box-shadow: -4px 4px 0 1px rgba(15,154,156,1);
+}
+
+/* ******************* FOOTER ******************** */
+footer
+{
+  background-color: #524A3A;
+  color: #FFFAE1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+form
+{
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+input, textarea, button
+{
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: 'Advent Pro', sans-serif;
+  border-radius: 8px;
+}
+
+textarea
+{
+  height: 120px;
+}
+
+button
+{
+  font-size: 1.5em;
+  background-color: #FFFAE1;
+}
+
+button:hover
+{
+  background-color: #e55039;
+  color: #FFFAE1;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+#deuxiemeTrait
+{
+  height: 1px;
+  width: 75%;
+  background-color: #FFFAE1;
+  margin: 60px auto;
+}
+
+#copyrightEtIcons
+{
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+#copyright
+{
+  width: 50%;
+  text-align: left;
+  color: #FFFAE1;
+}
+
+#icons
+{
+  width: 50%;
+  text-align: right;
+}
+
+#icons a
+{
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: #FFFAE1;
+}
+
+#icons a:hover
+{
+  transform: scale(1.5);
+  transition: 0.1s;
+}

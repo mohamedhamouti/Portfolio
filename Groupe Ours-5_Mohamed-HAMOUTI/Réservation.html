@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Ultimate Escape</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><a href="index.html"> Ultimate Escape </a></li>
+          <li><a href="Faq.html"> FAQ </a></li>
+          <li><a href="Réservation.html"> Résérvation </a></li>
+          <li><a href="Modes.html"> Modes </a></li>
+          <li><a href="Escapes.html"> Escapes </a></li>
+        </ul>
+      </nav>
+      <div id="img_Fond">
+        <h1>Ultimate Escape</h1>
+        <div id="premierTrait"></div>
+        <h3>Une réservation en un clic !</h3>
+      </div>
+    </header>
+    <section id="presentation">
+      <h2> Tarifs</h2>
+      <div id="Content">
+        <div id="TarCr">
+          <p>
+            <strong>Tarifs Heures Creuses</strong>
+            <br>
+            (en semaine de 12h à 16h)
+            <br>
+            <br>
+             7 Joueurs : 20€/pers 
+            <br>
+            <br>
+            6 Joueurs : 22€/pers
+            <br>
+            <br>
+             5 Joueurs : 25€/pers
+            <br>
+            <br>
+             4 Joueurs : 30€/pers
+          </p>
+        </div>
+        <div id="TarPl" >
+          <p>
+            <strong>Tarifs Heures Pleines</strong>
+            <br>
+            (en semaine + week-end de 18h à 00h)
+            <br>
+            <br>
+             7 Joueurs : 25€/pers 
+            <br>
+            <br>
+            6 Joueurs : 27€/pers
+            <br>
+            <br>
+             5 Joueurs : 30€/pers
+            <br>
+            <br>
+             4 Joueurs : 35€/pers
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Scp">
+      <h2>Démarrez votre résérvation !</h2>
+      <div style="position: absolute;display: flex;justify-content: center;margin-left:20%;margin-top: 60px;">
+        <div style="position: relative;top: 0px;">
+          <label for="adultes" style="margin-bottom: 20px;"><strong >Résérvation :</strong></label>
+          <form>
+            <div class = "form-row">
+              <select name = "days">
+                <option value = "day-select">Select Day</option>
+                <option value = "sunday">Lundi</option>
+                <option value = "monday">Mardi</option>
+                <option value = "tuesday">Mercredi</option>
+                <option value = "wednesday">Jeudi</option>
+                <option value = "thursday">Vendredi</option>
+                <option value = "friday">Samedi</option>
+                <option value = "saturday">Dimanche</option>
+              </select>
+              <select name = "hours">
+                <option value = "hour-select">Select Hour</option>
+                <option value = "10">12: 00</option>
+                <option value = "10">14: 00</option>
+                <option value = "10">16: 00</option>
+                <option value = "10">18: 00</option>
+                <option value = "10">20: 00</option>
+                <option value = "10">22: 00</option>
+                <option value = "10">23: 00</option>
+              </select>
+            </div>
+            <div class = "form-row">
+              <input type = "text" placeholder="Nom">
+              <input type = "text" placeholder="Prénom">
+              <input type = "text" placeholder="N° de téléphone">
+            </div>
+            <div class = "form-row">
+              <input type = "number" placeholder="Combien de personne ?" min = "1" max="10">
+              <input type = "submit" value = "Reservez">
+            </div>
+          </form>
+        </div>
+        <div style="position: relative;;bottom: 0px;">
+          <a href="Reserv.html"><img src="media/Calendar.jpg" alt="Calendrier"></a>
+        </div>
+      </div>
+      
+    </section>
+    <p style="margin-left: 30%"> <strong>Trouvez nous ici :
+         Ultimate Escape Game
+        2 rue Française
+        13330 Marseille
+        Métro RER Les Halles / Étienne Marcel</strong>
+    </p>
+    <footer>
+      <h2 id="contact">Contactez-nous</h2>
+      <form>
+        <input placeholder="Nom">
+        <input placeholder="E-mail">
+        <textarea placeholder="Votre message ici..."></textarea>
+        <button>Envoyer</button>
+      </form>
+      <div id="deuxiemeTrait"></div>
+      <div id="copyrightEtIcons">
+        <div id="copyright">
+          <span>© Ultimate Escape; 2020</span>
+        </div>
+        <div id="icons">
+          <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
+          <a href="http://www.facebook.fr"><i class="fa fa-facebook"></i></a>
+          <a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
